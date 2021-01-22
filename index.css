@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
   position: relative;
   margin-bottom: 0;
-  height: 100%
+  height: 100vh;
   }
 
 .preloader {
@@ -46,7 +46,7 @@ a:hover {
 /* line */
 #vl {
   height: 100%;
-  border-left: 3px solid black;
+  border-left: 3px solid #141414;
   position: absolute;
   left: 50%;
   margin-left: -3px;
@@ -91,14 +91,14 @@ a:hover {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   text-align:center;
 }
 
@@ -125,6 +125,25 @@ a:hover {
   margin-left: 50px;
   font-family: Satyr;
 }
+
+/* BURGERCLASS WITH NED */
+
+.burger{
+  font-size:50px;
+  cursor:pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  top:10px;
+  margin: 0;
+  padding: 2px 0 0 12px;
+}
+
+.hamburger {
+  position: sticky;
+  top:10px;
+
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -195,9 +214,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 17em;
   height: 17em;
   font-family: Satyr;
+  margin-top: 40%;
+  margin-bottom: 500px;
 }
 .preloader, .preloader__ring {
   transform-style: preserve-3d;
