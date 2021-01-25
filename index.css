@@ -76,6 +76,10 @@ sup{
   bottom: 0;
 }
 
+hr {
+  border: 1px solid #141414;
+}
+
 .title {
     font-family: Satyr;
     margin-top:0;
