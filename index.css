@@ -7,6 +7,12 @@
   font-family: NHaasGroteskTXPro-65Md;
   src: url(NHaasGroteskTXPro-65Md.otf);
 }
+
+@font-face {
+  font-family: NHaasGroteskTXPro-55Rg;
+  src: url(NHaasGroteskTXPro-55Rg.otf);
+}
+
 html {
     width: 100%;
     overflow-x: hidden;
@@ -41,11 +47,27 @@ a:hover {
   text-decoration: underline;
 }
 
+p.sub{
+  font-family: NHaasGroteskTXPro-55Rg;
+  font-size: 15px;
+  text-align: left;
+  hyphens: auto;
+  margin: auto;
+  vertical-align: top;
+}
+
+sup{
+  font-family: NHaasGroteskTXPro-55Rg;
+  vertical-align: top;
+  position: relative;
+  top: -0.3em;
+}
+
 /*YOUR TEXT*/
 
 /* line */
 #vl {
-  height: 100%;
+  height: 147100px;
   border-left: 3px solid #141414;
   position: absolute;
   left: 50%;
@@ -141,9 +163,9 @@ a:hover {
 .hamburger {
   position: sticky;
   top:10px;
+  margin-left: -6px;
 
 }
-
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -151,20 +173,6 @@ a:hover {
 }
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: linear-gradient(#ffffff, #1c1c1c);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ffffff, #1c1c1c);
-}
 
 /*RESPONSIVE SECTION */
 
